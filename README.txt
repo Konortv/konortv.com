@@ -1,13 +1,13 @@
-KONORTV V8 — maqueta final simplificada
+KONORTV V9 — reconstruida desde cero según la maqueta aprobada.
 
-Estructura:
-1. Banner KonorTV sin cabecera/menu.
-2. Redes solo con icono + nombre:
-   YouTube → Twitch → TikTok → Instagram → X → Discord.
-3. Último vídeo / Ver en YouTube.
-4. Footer: Construyendo mi propio legado · © 2026 KonorTV.
+Correcciones frente a V8:
+- Banner completo, no recortado agresivamente.
+- Tarjetas sociales más bajas y compactas.
+- Solo icono + nombre.
+- Orden: YouTube, Twitch, TikTok, Instagram, X, Discord.
+- Miniatura del último vídeo independiente del banner.
+- Sin menú superior.
+- Sin bloques extra.
+- Footer mínimo.
 
-IMPORTANTE:
-Los enlaces están temporalmente en # hasta recibir las URLs reales.
-Para GitHub Pages, sube index.html, style.css, script.js,
-banner-konortv.jpg y ultimo-video.jpg a la raíz del repositorio.
+Los href siguen en # hasta incorporar los enlaces reales.

@@ -1,5 +1,1 @@
-document.querySelectorAll('.pending').forEach(el=>{
-  el.addEventListener('click',e=>{
-    if(el.getAttribute('href')==='#') e.preventDefault();
-  });
-});
+document.querySelectorAll('a[href="#"]').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));
