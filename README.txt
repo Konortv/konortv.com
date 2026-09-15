@@ -1,9 +1,8 @@
-KONORTV V17 — CORRECCIÓN REAL DEL BANNER EN MÓVIL
-
-La V16 ya se estaba viendo; el problema era la propia imagen:
-el logo/corona estaba demasiado pegado al borde superior.
+KONORTV V18 — FINAL PARA PUBLICAR
 
 Cambios:
-- Se añadió espacio de cielo por encima del logo dentro de la imagen.
-- En móvil se muestra la imagen completa, sin recorte.
-- Se mantienen redes, enlaces actuales, firma y diseño restante.
+- Eliminado el fondo artificial añadido sobre el banner.
+- En móvil el banner se muestra completo, ligeramente reducido para que el logo no se corte.
+- Se mantienen iconos mejorados y enlaces actuales.
+- TikTok y Discord siguen pendientes.
+- Lista para GitHub Pages.

@@ -121,13 +121,15 @@ footer small{
 @media(max-width:600px){
   .hero{
     height:auto;
-    overflow:visible;
+    overflow:hidden;
     background:#010711;
+    padding-top:10px;
   }
   .hero img{
     display:block;
-    width:100%;
+    width:96%;
     height:auto;
+    margin:0 auto;
     object-fit:contain;
     object-position:center top;
   }
