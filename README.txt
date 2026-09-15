@@ -1,16 +1,9 @@
-KONORTV V16 — ajuste del banner en móvil
+KONORTV V17 — CORRECCIÓN REAL DEL BANNER EN MÓVIL
 
-Cambios respecto a V15:
-- El banner en móvil muestra mejor la parte superior.
-- Aumentada la altura del hero en móvil.
-- Ajustado object-position para enseñar más la zona alta del banner.
-- Se mantienen los enlaces actuales:
-  YouTube, Twitch, Instagram y X.
-- TikTok y Discord siguen pendientes.
+La V16 ya se estaba viendo; el problema era la propia imagen:
+el logo/corona estaba demasiado pegado al borde superior.
 
-Archivos:
-index.html
-style.css
-script.js
-hero-konortv.jpg
-firma-konortv.png
+Cambios:
+- Se añadió espacio de cielo por encima del logo dentro de la imagen.
+- En móvil se muestra la imagen completa, sin recorte.
+- Se mantienen redes, enlaces actuales, firma y diseño restante.
