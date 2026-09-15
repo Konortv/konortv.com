@@ -1,4 +1,13 @@
-KonorTV V5 — versión con banner compacto.
-Mantiene la estructura de la maqueta aprobada y reduce la cabecera para que las redes y el contenido destacado entren mucho antes en pantalla.
-Desktop: ~270 px de banner; pantallas muy grandes: ~300 px; móvil: 155–190 px.
-Enlaces sociales y vídeo siguen pendientes de URLs reales.
+KONORTV V8 — maqueta final simplificada
+
+Estructura:
+1. Banner KonorTV sin cabecera/menu.
+2. Redes solo con icono + nombre:
+   YouTube → Twitch → TikTok → Instagram → X → Discord.
+3. Último vídeo / Ver en YouTube.
+4. Footer: Construyendo mi propio legado · © 2026 KonorTV.
+
+IMPORTANTE:
+Los enlaces están temporalmente en # hasta recibir las URLs reales.
+Para GitHub Pages, sube index.html, style.css, script.js,
+banner-konortv.jpg y ultimo-video.jpg a la raíz del repositorio.

@@ -1,1 +1,5 @@
-const b=document.querySelector(".menu"),n=document.querySelector("nav");b.addEventListener("click",()=>n.classList.toggle("open"));document.querySelectorAll('a[href="#"]').forEach(a=>a.addEventListener("click",e=>e.preventDefault()));document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click",()=>n.classList.remove("open")));
+document.querySelectorAll('.pending').forEach(el=>{
+  el.addEventListener('click',e=>{
+    if(el.getAttribute('href')==='#') e.preventDefault();
+  });
+});
