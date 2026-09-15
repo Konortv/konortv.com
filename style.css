@@ -24,13 +24,16 @@ main{
 /* Big hero: shown completely, no object-fit cropping */
 .hero{
   width:100%;
+  height:360px;
   background:#000;
   overflow:hidden;
 }
 .hero img{
   display:block;
   width:100%;
-  height:auto;
+  height:100%;
+  object-fit:cover;
+  object-position:center 34%;
 }
 
 /* Social row */
@@ -80,26 +83,6 @@ main{
 .xx{font-size:29px}
 .dc{background:#556cf2}
 .discord-face{font-size:15px;letter-spacing:5px;margin-left:5px}
-
-/* Scroll invitation */
-.scroll-cue{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:5px;
-  padding:10px 0 24px;
-  color:#9db3c8;
-  background:#010711;
-}
-.scroll-cue small{
-  font-size:8px;
-  letter-spacing:.28em;
-}
-.mouse{
-  width:20px;height:29px;border:1px solid #5a8cc1;border-radius:12px;
-  display:grid;place-items:center;color:#7ebfff;font-size:13px;
-}
-.arrow{color:#61aaff;font-size:19px;line-height:.7}
 
 /* Featured video: only appears after scrolling */
 .featured{
@@ -203,12 +186,15 @@ footer small{
 .pending{cursor:default}
 
 @media(max-width:1000px){
+  .hero{height:290px}
   .socials{grid-template-columns:repeat(3,1fr)}
   .featured{grid-template-columns:1fr;gap:25px}
   .featured-copy{text-align:center;padding:4px 3% 18px}
 }
 
 @media(max-width:600px){
+  .hero{height:180px}
+  .hero img{object-position:center 36%}
   .socials{
     grid-template-columns:repeat(2,1fr);
     gap:8px;

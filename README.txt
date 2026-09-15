@@ -1,16 +1,13 @@
-KONORTV V11 — BASE FINAL
+KONORTV V12 — Banner ajustado
 
-Diseño aprobado:
-- Sin menú superior.
-- Hero grande completo (no recortado con object-fit).
-- Logo KonorTV solo en la parte superior del hero.
-- Redes debajo: YouTube, Twitch, TikTok, Instagram, X, Discord.
-- Indicador para hacer scroll.
-- Último vídeo aparece al bajar.
-- Footer con la firma KonorTV.
-- Los enlaces siguen en # hasta recibir URLs reales.
+Cambios respecto a V11:
+- Banner más pequeño para que no ocupe toda la primera pantalla.
+- Eliminado por completo "DESLIZA PARA DESCUBRIR MÁS".
+- Redes aparecen inmediatamente después del banner.
+- Se mantiene la sección de último vídeo y la firma KonorTV al final.
+- Enlaces siguen pendientes (#).
 
-Archivos para GitHub Pages:
+Archivos:
 index.html
 style.css
 script.js
