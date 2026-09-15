@@ -119,8 +119,8 @@ footer small{
 }
 
 @media(max-width:600px){
-  .hero{height:180px}
-  .hero img{object-position:center 36%}
+  .hero{height:205px}
+  .hero img{object-position:center 18%}
   .socials{
     grid-template-columns:repeat(2,1fr);
     gap:8px;
@@ -138,3 +138,18 @@ footer small{
 
 .socials{padding-bottom:34px}
 footer{margin-top:4px}
+
+.social.pending{
+  opacity:.58;
+  filter:saturate(.75);
+}
+.social.pending:hover{
+  transform:none;
+  box-shadow:0 0 14px #009dff44,inset 0 0 16px #008cff0d;
+  border-color:#079be9;
+}
+
+@media(max-width:430px){
+  .hero{height:190px}
+  .hero img{object-position:center 14%}
+}

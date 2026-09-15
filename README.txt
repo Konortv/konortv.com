@@ -1,12 +1,12 @@
-KONORTV V14 — SOLO REDES
+KONORTV V16 — ajuste del banner en móvil
 
-Versión simplificada:
-- Banner KonorTV.
-- Redes sociales con iconos mejorados.
-- Sin sección de último vídeo.
-- Firma KonorTV al final.
-- Footer con “Construyendo mi propio legado” y © 2026 KonorTV.
-- Enlaces de redes todavía pendientes (#).
+Cambios respecto a V15:
+- El banner en móvil muestra mejor la parte superior.
+- Aumentada la altura del hero en móvil.
+- Ajustado object-position para enseñar más la zona alta del banner.
+- Se mantienen los enlaces actuales:
+  YouTube, Twitch, Instagram y X.
+- TikTok y Discord siguen pendientes.
 
 Archivos:
 index.html
