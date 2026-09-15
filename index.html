@@ -1,26 +1,72 @@
-<!doctype html><html lang="es"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#010712">
+<meta name="description" content="KonorTV — redes, directos y último vídeo.">
 <title>KonorTV — Construyendo mi propio legado</title>
-<meta name="theme-color" content="#010711"><link rel="stylesheet" href="style.css">
-</head><body><main class="site">
-<section class="hero"><img src="banner-konortv.jpg" alt="KonorTV"></section>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<section class="socials">
-<a href="#" class="social"><span class="ico yt">▶</span><b>YouTube</b></a>
-<a href="#" class="social"><span class="ico tw">▣</span><b>Twitch</b></a>
-<a href="#" class="social"><span class="ico tk">♪</span><b>TikTok</b></a>
-<a href="#" class="social"><span class="ico ig">◎</span><b>Instagram</b></a>
-<a href="#" class="social"><span class="ico xx">𝕏</span><b>X</b></a>
-<a href="#" class="social"><span class="ico dc">●</span><b>Discord</b></a>
-</section>
+<main>
+  <section class="hero">
+    <img src="hero-konortv.jpg" alt="KonorTV">
+  </section>
 
-<section class="featured">
-<div class="preview"><img src="ultimo-video.jpg" alt="Último vídeo"><span class="play">▶</span></div>
-<div class="copy"><span class="overline">ÚLTIMO VÍDEO</span>
-<h1>EL PRÓXIMO CAPÍTULO<br><em>EMPIEZA AQUÍ.</em></h1>
-<p>Nuevos retos, más contenido y muchas sorpresas.<br>No te lo pierdas.</p>
-<a href="#" class="watch">▶ &nbsp; VER EN YOUTUBE <strong>→</strong></a></div>
-</section>
+  <section class="socials" aria-label="Redes sociales de KonorTV">
+    <a class="social youtube" href="#" aria-label="YouTube">
+      <span class="platform-icon yt"><span class="yt-play"></span></span><b>YouTube</b>
+    </a>
 
-<footer><div class="legacy"><i></i><span>CONSTRUYENDO MI PROPIO LEGADO</span><i></i></div><small>© 2026 KonorTV</small></footer>
-</main><script src="script.js"></script></body></html>
+    <a class="social twitch" href="#" aria-label="Twitch">
+      <span class="platform-icon tw">▣</span><b>Twitch</b>
+    </a>
+
+    <a class="social tiktok" href="#" aria-label="TikTok">
+      <span class="platform-icon tk">♪</span><b>TikTok</b>
+    </a>
+
+    <a class="social instagram" href="#" aria-label="Instagram">
+      <span class="platform-icon ig"><span class="ig-ring"></span></span><b>Instagram</b>
+    </a>
+
+    <a class="social x" href="#" aria-label="X">
+      <span class="platform-icon xx">𝕏</span><b>X</b>
+    </a>
+
+    <a class="social discord" href="#" aria-label="Discord">
+      <span class="platform-icon dc"><span class="discord-face">••</span></span><b>Discord</b>
+    </a>
+  </section>
+
+  <a class="scroll-cue" href="#ultimo-video" aria-label="Ir al último vídeo">
+    <span class="mouse">⌄</span>
+    <small>DESLIZA PARA DESCUBRIR MÁS</small>
+    <span class="arrow">⌄</span>
+  </a>
+
+  <section class="featured" id="ultimo-video">
+    <a class="video-frame pending" href="#" aria-label="Ver último vídeo">
+      <img src="ultimo-video.jpg" alt="Último vídeo de KonorTV">
+    </a>
+
+    <div class="featured-copy">
+      <span class="eyebrow">ÚLTIMO VÍDEO</span>
+      <h1>EL PRÓXIMO CAPÍTULO<br><em>EMPIEZA AQUÍ.</em></h1>
+      <p>Nuevos retos, más contenido y muchas sorpresas.<br>No te lo pierdas.</p>
+      <a class="youtube-btn pending" href="#">▶ &nbsp; VER EN YOUTUBE <strong>→</strong></a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <img class="signature" src="firma-konortv.png" alt="Firma KonorTV">
+  <div class="legacy"><i></i><span>CONSTRUYENDO MI PROPIO LEGADO</span><i></i></div>
+  <small>© 2026 KonorTV</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

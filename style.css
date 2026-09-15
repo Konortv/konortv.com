@@ -1,1 +1,232 @@
-*{box-sizing:border-box}html,body{margin:0;background:#010711;color:#fff;font-family:Arial,Helvetica,sans-serif}body{background:radial-gradient(circle at 50% 0,#071a2d 0,#010711 45%,#00040a 100%)}.site{width:min(1480px,94vw);margin:auto;padding:20px 0}.hero{width:100%;height:300px;overflow:hidden;border:1px solid #0875ad;background:#000}.hero img{width:100%;height:100%;display:block;object-fit:cover;object-position:center}.socials{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;padding:18px 10px 28px}.social{height:82px;display:flex;align-items:center;justify-content:center;gap:13px;border:1.5px solid #0797e3;border-radius:9px;background:linear-gradient(145deg,#071629,#020914);box-shadow:0 0 13px #009cff40;color:#fff;text-decoration:none}.social:hover{box-shadow:0 0 20px #009cff70}.social b{font-size:16px}.ico{width:43px;height:43px;display:grid;place-items:center;border-radius:9px;font-size:24px;font-weight:900;background:#050a11}.yt{background:#e10c19}.tw{background:#43107e;color:#b775ff}.tk{text-shadow:2px 1px #00e8ed,-2px -1px #ff0050}.ig{font-size:28px;background:linear-gradient(135deg,#6d2cff,#f41988,#ffb129)}.xx{font-size:28px}.dc{background:#536cf0}.featured{display:grid;grid-template-columns:1.25fr .85fr;gap:38px;align-items:center;padding:15px;border:1px solid #0877af;border-radius:11px;background:linear-gradient(135deg,#03111f,#010914)}.preview{height:275px;position:relative;overflow:hidden;border:1px solid #0877af;border-radius:8px}.preview img{width:100%;height:100%;object-fit:cover}.preview:after{content:"";position:absolute;inset:0;background:#00152b22}.play{position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-50%);width:66px;height:66px;border:2px solid #fff;border-radius:50%;display:grid;place-items:center;background:#000b;padding-left:4px;font-size:23px}.copy{padding-right:5%}.overline{color:#23c3ff;font-size:11px;letter-spacing:.34em;font-weight:800}.copy h1{font-size:clamp(29px,3vw,44px);line-height:1.05;margin:12px 0}.copy h1 em{font-style:normal;color:#16b9ff;text-shadow:0 0 13px #008cff}.copy p{color:#d2dce5;font-size:14px;line-height:1.45;margin:0 0 20px}.watch{display:inline-flex;align-items:center;padding:13px 20px;border:2px solid #16adff;border-radius:7px;box-shadow:0 0 14px #008cff99;color:#fff;text-decoration:none;font-size:12px;font-weight:900}.watch strong{margin-left:17px;color:#2fc2ff;font-size:18px}footer{text-align:center;padding:34px 0 5px}.legacy{display:flex;justify-content:center;align-items:center;gap:20px;font-size:8px;letter-spacing:.34em}.legacy i{width:42px;height:2px;background:#14adff}footer small{display:block;margin-top:11px;color:#9db1c4;font-size:10px}@media(max-width:1000px){.hero{height:245px}.socials{grid-template-columns:repeat(3,1fr)}.featured{grid-template-columns:1fr}.copy{text-align:center;padding:3px 0 17px}}@media(max-width:600px){.site{width:100%;padding:0 8px 14px}.hero{height:150px;border-left:0;border-right:0}.socials{grid-template-columns:repeat(2,1fr);gap:8px;padding:11px 1px 18px}.social{height:67px;gap:8px}.ico{width:36px;height:36px;font-size:19px}.social b{font-size:13px}.featured{padding:8px}.preview{height:185px}.copy h1{font-size:26px}.legacy{gap:7px;font-size:6px;letter-spacing:.18em}.legacy i{width:17px}}
+
+:root{
+  --bg:#010712;
+  --panel:#03111f;
+  --blue:#14b5ff;
+  --line:#087dbb;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{
+  margin:0;
+  color:#fff;
+  font-family:Arial,Helvetica,sans-serif;
+  background:
+    radial-gradient(circle at 50% 15%,#082441 0,#010712 40%,#00040a 100%);
+}
+a{text-decoration:none;color:inherit}
+
+main{
+  width:min(1600px,100%);
+  margin:0 auto;
+}
+
+/* Big hero: shown completely, no object-fit cropping */
+.hero{
+  width:100%;
+  background:#000;
+  overflow:hidden;
+}
+.hero img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+/* Social row */
+.socials{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  gap:14px;
+  padding:20px 3.5% 14px;
+  background:linear-gradient(#010a16,#010711);
+}
+.social{
+  height:84px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:13px;
+  border:1.5px solid #079be9;
+  border-radius:9px;
+  background:linear-gradient(145deg,#07182b,#020914);
+  box-shadow:0 0 14px #009dff44,inset 0 0 16px #008cff0d;
+  transition:.18s ease;
+}
+.social:hover{
+  transform:translateY(-2px);
+  border-color:#30c2ff;
+  box-shadow:0 0 22px #009dff77;
+}
+.social b{font-size:16px;letter-spacing:-.01em}
+.platform-icon{
+  width:43px;height:43px;border-radius:9px;
+  display:grid;place-items:center;
+  background:#050b12;
+  font-size:24px;font-weight:900;
+  position:relative;
+}
+.yt{background:#e71320}
+.yt-play{
+  width:0;height:0;border-top:8px solid transparent;border-bottom:8px solid transparent;border-left:13px solid white;margin-left:3px;
+}
+.tw{background:#43117c;color:#c07cff}
+.tk{font-size:29px;text-shadow:2px 1px #00edf2,-2px -1px #ff0050}
+.ig{background:linear-gradient(135deg,#6f2cff 0%,#f31787 52%,#ffb02c 100%)}
+.ig-ring{
+  width:21px;height:21px;border:3px solid white;border-radius:7px;position:relative;
+}
+.ig-ring:after{content:"";width:4px;height:4px;background:white;border-radius:50%;position:absolute;right:1px;top:1px}
+.xx{font-size:29px}
+.dc{background:#556cf2}
+.discord-face{font-size:15px;letter-spacing:5px;margin-left:5px}
+
+/* Scroll invitation */
+.scroll-cue{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:5px;
+  padding:10px 0 24px;
+  color:#9db3c8;
+  background:#010711;
+}
+.scroll-cue small{
+  font-size:8px;
+  letter-spacing:.28em;
+}
+.mouse{
+  width:20px;height:29px;border:1px solid #5a8cc1;border-radius:12px;
+  display:grid;place-items:center;color:#7ebfff;font-size:13px;
+}
+.arrow{color:#61aaff;font-size:19px;line-height:.7}
+
+/* Featured video: only appears after scrolling */
+.featured{
+  width:93%;
+  margin:0 auto 54px;
+  padding:18px;
+  border:1px solid #0879b5;
+  border-radius:11px;
+  background:linear-gradient(135deg,#031220,#010914);
+  box-shadow:inset 0 0 50px #00649d12;
+  display:grid;
+  grid-template-columns:1.3fr .75fr;
+  gap:42px;
+  align-items:center;
+}
+.video-frame{
+  display:block;
+  overflow:hidden;
+  border:1px solid #0879b5;
+  border-radius:8px;
+  background:#020812;
+}
+.video-frame img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+.featured-copy{padding-right:4%}
+.eyebrow{
+  color:#23c6ff;
+  font-size:11px;
+  letter-spacing:.34em;
+  font-weight:800;
+}
+.featured h1{
+  font-size:clamp(31px,3vw,47px);
+  line-height:1.04;
+  margin:14px 0 15px;
+}
+.featured h1 em{
+  font-style:normal;
+  color:#19b9ff;
+  text-shadow:0 0 14px #008cff;
+}
+.featured p{
+  margin:0 0 22px;
+  color:#d3dce6;
+  font-size:15px;
+  line-height:1.45;
+}
+.youtube-btn{
+  display:inline-flex;
+  align-items:center;
+  padding:14px 21px;
+  border:2px solid #16afff;
+  border-radius:7px;
+  box-shadow:0 0 15px #008cffaa,inset 0 0 14px #008cff22;
+  font-size:13px;
+  font-weight:900;
+}
+.youtube-btn strong{
+  margin-left:18px;
+  color:#27c4ff;
+  font-size:19px;
+}
+
+/* Footer with signature */
+footer{
+  min-height:280px;
+  padding:27px 20px 30px;
+  border-top:1px solid #073b5c;
+  text-align:center;
+  background:
+    linear-gradient(#010711cc,#010711e8),
+    radial-gradient(circle at 50% 60%,#07345c55,transparent 45%);
+}
+.signature{
+  display:block;
+  width:min(330px,70vw);
+  height:auto;
+  margin:0 auto 12px;
+  mix-blend-mode:screen;
+}
+.legacy{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:23px;
+  color:#dfeaf4;
+  font-size:8px;
+  letter-spacing:.36em;
+}
+.legacy i{width:48px;height:2px;background:#17b3ff}
+footer small{
+  display:block;
+  margin-top:12px;
+  color:#9db0c2;
+  font-size:10px;
+}
+
+.pending{cursor:default}
+
+@media(max-width:1000px){
+  .socials{grid-template-columns:repeat(3,1fr)}
+  .featured{grid-template-columns:1fr;gap:25px}
+  .featured-copy{text-align:center;padding:4px 3% 18px}
+}
+
+@media(max-width:600px){
+  .socials{
+    grid-template-columns:repeat(2,1fr);
+    gap:8px;
+    padding:12px 8px 10px;
+  }
+  .social{height:68px;gap:9px}
+  .platform-icon{width:36px;height:36px;font-size:20px}
+  .social b{font-size:13px}
+  .scroll-cue{padding-bottom:18px}
+  .featured{
+    width:calc(100% - 16px);
+    padding:9px;
+    margin-bottom:35px;
+  }
+  .featured h1{font-size:28px}
+  .featured p{font-size:13px}
+  .signature{width:min(270px,76vw)}
+  .legacy{gap:8px;font-size:6px;letter-spacing:.18em}
+  .legacy i{width:18px}
+  footer{min-height:220px}
+}
